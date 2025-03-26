@@ -1,0 +1,90 @@
+/* Responsividade para telas maiores */
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 5%;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
+  .nav-menu > li > a {
+    font-size: large;
+  }
+
+  .nav-menu a:hover {
+    transition: 0.3s;
+    font-size: x-large;
+  }
+
+  #hero {
+    padding-top: 1rem;
+    height: 20em;
+    text-align: center;
+    color: #fff;
+  }
+
+  #sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sobre {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 2em;
+    margin: 1.5em;
+    text-align: center;
+    color: #fff;
+  }
+
+  #projetos-menu h2 {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+
+  #projetos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 100%;
+  }
+
+  .card-projeto img {
+    width: 100%;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+  }
+
+  #contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+    width: 60%;
+  }
+
+  .social-icons {
+    font-size: 1.5rem;
+  }
+
+  .social-icons li {
+    font-size: 2rem;
+  }
+}

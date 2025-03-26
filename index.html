@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathan Thummel - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="media.css" />
+    <!-- Link para o arquivo CSS Media Queries-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav">
+        <div class="logo">
+          <a href=""
+            ><img
+              src="img/logo.png"
+              alt="Logo de uma raposa laranja"
+              class="logo-img"
+              width="200px"
+          /></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <section id="hero">
+        <img
+          src="img/hero2.jpeg"
+          alt="Foto de Nathan Thummel"
+          class="hero-img"
+        />
+        <h1>Nathan de Holanda Thummel</h1>
+        <p>Desenvolvedor Web Frontend</p>
+      </section>
+    </header>
+
+    <main>
+      <section id="sobre-container">
+        <div id="sobre">
+          <h2>Sobre mim</h2>
+          <p>
+            Olá, sou Nathan Thummel, desenvolvedor web apaixonado pela
+            tecnologia.
+          </p>
+          <p>
+            Estou cursando em Analise e Desenvolvimento de Sistemas pela Uninter
+            e estou em busca de oportunidades na área de Frontend. Tenho
+            conhecimento em
+            <span class="accent-color">HTML, CSS, JavaScript e React</span>.
+          </p>
+        </div>
+        <div id="skills">
+          <h2>Skills</h2>
+          <ul class="skills-grid">
+            <li>HTML5<i class="fa-brands fa-html5"></i></li>
+            <li>CSS 3 <i class="fa-brands fa-css3-alt"></i></li>
+            <li>JavaScript <i class="fa-brands fa-js"></i></li>
+            <li>React <i class="fa-brands fa-react"></i></li>
+            <li>Git <i class="fa-brands fa-git"></i></li>
+            <li>Python <i class="fa-brands fa-python"></i></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projetos-menu">
+        <h2>Projetos</h2>
+        <div id="projetos">
+          <div class="card-projeto">
+            <!-- <div class="card-projeto"> -->
+            <img class="card-projeto-img" src="img/thumb1.png" alt="" />
+            <div class="card-projeto-descricao">
+              <h2>Calculadora de IMC com React</h2>
+            </div>
+            <button class="open-modal" data-modal="projeto1">
+              Ver detalhes
+            </button>
+            <!-- Modal1 -->
+            <dialog class="modal" id="projeto1">
+              <button class="close-modal" data-modal="projeto1">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <div class="modal-content">
+                <h2>Calculadora de IMC</h2>
+                <p>
+                  Um projeto simples de uma calculadora de IMC feita com React,
+                  com o objetivo de praticar e aprimorar meu conhecimento em
+                  React. Com sistema de classificação do IMC com diferentes
+                  cores indicativas de acordo com a faixa de IMC.
+                  <span class="accent-color">Tecnologias utilizadas:</span>
+                  React, CSS e JavaScript, Vite, Git.
+                </p>
+                <a
+                  href="https://github.com/NateD3V/imc-calc-react"
+                  target="_blank"
+                  >Link do projeto</a
+                >
+              </div>
+            </dialog>
+          </div>
+
+          <div class="card-projeto">
+            <!-- <div class="card-projeto"> -->
+            <img class="card-projeto-img" src="img/thumb2.png" alt="" />
+            <div class="card-projeto-descricao">
+              <h2>ToDo Avançado</h2>
+            </div>
+            <button class="open-modal" data-modal="projeto2">
+              Ver detalhes
+            </button>
+            <!-- Modal2 -->
+            <dialog class="modal" id="projeto2">
+              <button class="close-modal" data-modal="projeto2">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <div class="modal-content">
+                <h2>App ToDo Avançado</h2>
+                <p>
+                  Um App ToDo feito com HTML, CSS e JavaScript. Salva os dados
+                  no localStorage.
+                  <span class="accent-color">Tecnologias utilizadas:</span>
+                  HTML, CSS e JavaScript, Git.
+                </p>
+                <a href="https://github.com/NateD3V/app-todo" target="_blank"
+                  >Link do projeto</a
+                >
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </section>
+      <section id="contato">
+        <h2>Entre em contato</h2>
+        <form action="" class="form">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" cols="30" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>&copy; 2025 - Nathan Thummel</p>
+      <ul class="social-icons">
+        <li>
+          <a href="https://github.com/NateD3V" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/devnate/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/nathan.de.holanda/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://api.whatsapp.com/send?phone=5585999142070&text=Ol%C3%A1,%20vi%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"
+            target="_blank"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
