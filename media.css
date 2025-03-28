@@ -20,6 +20,20 @@
     font-size: x-large;
   }
 
+  #hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+  }
+  #hero-about-row {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 1em;
+  }
+
   #hero {
     padding-top: 1rem;
     height: 20em;
@@ -29,18 +43,19 @@
 
   #sobre-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    width: auto;
   }
 
   #sobre {
     display: flex;
-    margin: 0 auto;
     flex-direction: column;
-    width: 60%;
+    justify-content: center;
     margin: 0 auto;
-    padding-top: 2em;
-    margin: 1.5em;
+    width: 60vw;
+    padding: 2em;
+    margin: 6rem 2rem 0 2rem;
     text-align: center;
     color: #fff;
   }
@@ -71,6 +86,12 @@
     grid-row-gap: 2em;
   }
 
+  .skills-grid > li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #414141;
+  }
+
   #contato {
     display: flex;
     flex-direction: column;
@@ -86,5 +107,9 @@
 
   .social-icons li {
     font-size: 2rem;
+  }
+
+  .form {
+    width: 90%;
   }
 }

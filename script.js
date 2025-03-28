@@ -30,6 +30,7 @@ const message = document.querySelector("#mensagem");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  var valid = false;
 
   if (name.value.trim() == "") {
     name.classList.add("invalido");
@@ -41,12 +42,20 @@ form.addEventListener("submit", (e) => {
     email.classList.add("invalido");
   } else {
     email.classList.remove("invalido");
+    valid = true;
   }
 
   if (message.value.trim() == "") {
     message.classList.add("invalido");
   } else {
     message.classList.remove("invalido");
+  }
+
+  if (valid) {
+    alert("Formulário enviado com sucesso!");
+    form.reset();
+  } else {
+    alert("Por favor, preencha todos os campos corretamente.");
   }
 });
 
