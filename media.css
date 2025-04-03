@@ -32,6 +32,7 @@
     flex-direction: row;
     align-items: left;
     gap: 1em;
+    border-bottom: 1px outset #f38b02;
   }
 
   #hero {
@@ -46,6 +47,7 @@
     flex-direction: row;
     align-items: center;
     width: auto;
+    border: none;
   }
 
   #sobre {
