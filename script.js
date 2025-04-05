@@ -69,3 +69,23 @@ document.getElementById("email").addEventListener("input", function () {
     this.classList.add("invalido");
   }
 });
+
+// menu responsivo
+const menuButton = document.querySelector(".menu-icon");
+const menu = document.querySelector(".nav-menu");
+const menuItems = document.querySelectorAll(".nav-menu a");
+
+// Evento de clique em cada item do menu, que fecha o menu
+// quando um item é selecionado.
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener("click", () => {
+    // Remove a classe "active" do menu para fechá-lo
+    menu.classList.remove("active");
+  });
+});
+
+// Evento que altera a classe "active" do menu quando o botão de menu é clicado
+// Isso faz com que o menu seja exibido ou ocultado.
+menuButton.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});

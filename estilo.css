@@ -61,6 +61,10 @@ a {
   margin: auto;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .nav-menu > li > a {
   text-decoration: none;
   color: white;
@@ -77,16 +81,18 @@ a {
 /* Seção Hero */
 
 #hero {
-  margin: 3.2em 0;
+  margin: 5em 0;
   text-align: center;
   color: #fff;
-  height: 19em;
+  height: 15em;
   /* filter: drop-shadow(0 0.23rem 0.35rem #f38b02); */
 }
 
 #hero-about-row {
   background: url("img/bg2.jpg") no-repeat center center fixed;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 #hero img {
@@ -95,7 +101,7 @@ a {
   /* outline: 2px solid #f38b0277; */
   border-radius: 50%;
   overflow: hidden;
-  filter: drop-shadow(0 0.23rem 0.35rem #f38b02);
+  filter: drop-shadow(0 0.23rem 0.35rem #f38b0284);
 }
 
 #hero h1 {
